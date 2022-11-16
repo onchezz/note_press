@@ -8,9 +8,13 @@ const primaryColor = bluish;
 const Color darkGrey = Color(0xFF121212);
 const Color darkHeder = Color(0xFF424242);
 
-class Themes {
-  static final light =
-      ThemeData(primaryColor: primaryColor, brightness: Brightness.light);
-  static final dark =
-      ThemeData(primaryColor: darkGrey, brightness: Brightness.dark);
+class MyThemes {
+  static final light = ThemeData(
+      primaryColor: bluish,
+      appBarTheme: const AppBarTheme(color: bluish),
+      brightness: Brightness.light);
+  static final dark = ThemeData(
+      primaryColor: darkGrey,
+      appBarTheme: const AppBarTheme(color: darkGrey),
+      brightness: Brightness.dark);
 }
